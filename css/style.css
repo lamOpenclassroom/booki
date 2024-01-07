@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+/*-----------------------------------BALISES HTML------------------------------------*/
+
+/*---Couleurs---*/
+:root {
+    --main-color: #0065FC;
+    /* var(--main-color) */
+    --second-color: #DEEBFF;
+    /* var(--second-color) */
+    --light-grey-color: #D9D9D9;
+    /* var(--light-grey-color) */
+    --color-grey-background: #F2F2F2;
+    /* var(--color-grey-background) */
+    --color-black-background: #000;
+    /* var(--color-black-background) */
+}
+
+/*---Paramètre par défaut---*/
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*N'augmente pas la largeur*/
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none;
+}
+
+/*---Format texte---*/
+h1,
+h2 {
+    font-size: 1.38rem;
+}
+
+li {
+    font-size: 1.06rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+i {
+    font-size: 0.75rem;
+}
+
+p,
+a {
+    text-decoration: none;
+}
+
+article h3 {
+    color: var(--color-black-background);
+}
+
+/*---HEADER---*/
+/*Position logo Booki*/
+header div img {
+    margin-top: 44px;
+}
+
+/*---FOOTER---*/
+footer {
+    display: flex;
+    background: var(--color-grey-background);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 45px 0 51px 0;
+}
+
+footer div h3 {
+    padding-bottom: 20px;
+}
+
+footer div .ulFooter li {
+    padding-bottom: 12px;
+}
+
+footer li a {
+    color: var(--color-black-background);
+    display: block;
+}
+
+
+/*-----------------------------------------CLASSE------------------------------------------------*/
+
+/*Paramètre global*/
+.contener {
+    width: 1400px;
+    padding: 0 50px;
+    margin: auto;
+}
+
+/*Format texte*/
+.imgHeberg article p,
+.imgPopulaire article p {
+    font-size: 0.87rem;
+    color: var(--color-black-background);
+}
+
+.paragraphFiltre p,
+input,
+#displayMore a {
+    font-weight: 900;
+    font-size: 1.13rem;
+    color: var(--color-black-background);
+}
+
+.liHeberg a {
+    color: var(--color-black-background);
+    display: block;
+}
+
+.liActivite a {
+    color: var(--color-black-background);
+    display: block;
+}
+
+/*LES ICONES*/
+
+/*Partie Filtres*/
+.ecoIcone::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f53a";
+    padding-right: 10px;
+    color: var(--main-color);
+    font-size: 1.38rem;
+}
+
+.famiIcone::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f183";
+    padding-right: 14.56px;
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.romanIcone::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f004";
+    padding-right: 10px;
+    color: var(--main-color);
+    font-size: 1.38rem;
+}
+
+.animIcone::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f6d3";
+    padding-right: 10px;
+    color: var(--main-color);
+    font-size: 1.38rem;
+}
+
+/*Partie étoiles*/
+.stars {
+    color: var(--main-color);
+}
+
+.stars .grey {
+    color: var(--color-grey-background);
+}
+
+/*---HEADER---*/
+
+.liHeberg,
+.liActivite {
+    padding-top: 42px;
+    width: 50%;
+    text-align: center;
+}
+
+/*Couleur bleu au passage des liens hébergements et activités*/
+.liHeberg a:hover,
+.liActivite a:hover {
+    color: var(--main-color);
+}
+
+/*Barre bleu solid et pointeur au passage des liens hébergements et activités*/
+.liHeberg:hover,
+.liActivite:hover {
+    border-top: 2px var(--main-color) solid;
+    color: var(--main-color);
+    cursor: pointer;
+    padding-top: 40px;
+}
+
+/*Partie titre et paragraphe*/
+.h1Paragraph {
+    margin-top: 63px;
+}
+
+/*La partie filtres*/
+.paragraphFiltre {
+    display: flex;
+    align-items: baseline;
+}
+
+.paragraphFiltre li {
+    display: flex;
+    border: 2px solid var(--light-grey-color);
+    border-radius: 25px;
+    margin-left: 50px;
+    padding: 8px 20px;
+    align-items: center;
+    font-weight: 900;
+}
+
+.paragraphFiltre li:hover {
+    background: var(--second-color);
+    cursor: pointer;
+}
+
+
+/*---MAIN---*/
+
+/*Partie icône information*/
+.info {
+    margin: 50px 0 37px 0;
+}
+
+.info p::before {
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    content: "\f129";
+    border: 1px solid var(--light-grey-color);
+    border-radius: 50%;
+    color: var(--main-color);
+    padding: 7px 10px;
+    margin-right: 11px;
+}
+
+/*---Ajustement photos---*/
+
+.imgActiviteLarge figure {
+    width: 302px;
+    height: 389px;
+}
+
+.imgActiviteLarge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Structure section Hébergement à Marseille*/
+.imgHeberg {
+    margin-right: 40px;
+    background: var(--color-grey-background);
+    border-radius: 20px;
+}
+
+.imgHeberg h2 {
+    padding: 42px 0 23px 40px;
+}
+
+.imgHeberg article {
+    width: 246px;
+    height: 199px;
+    background: #FFF;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.imgHeberg #articleFlex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.titleParagraphHeberg {
+    padding-left: 16px;
+}
+
+.imgHeberg article p {
+    padding: 3px 0;
+}
+
+.imgHeberg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #FFF;
+    border-radius: 20px 20px 0 0;
+}
+
+.imgHeberg .stars {
+    padding: 9px 0 0 16px;
+}
+
+/*Structure section les plus populaires*/
+.imgPopulaire {
+    background: var(--color-grey-background);
+    border-radius: 20px;
+    padding: 41px 40px 34px 37px;
+}
+
+.imgPopulaire h2 {
+    position: relative;
+}
+
+.imgPopulaire article {
+    width: 343px;
+    height: 144px;
+    background: #FFF;
+    border-radius: 20px;
+    display: flex;
+    margin: 33px 0;
+}
+
+.imgPopulaire figure {
+    width: 137px;
+    height: 144px;
+}
+
+.imgPopulaire img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0 0 20px;
+}
+
+.imgPopulaire a {
+    display: flex;
+}
+
+.imgPopulaire article .titlePara {
+    width: 206px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 22px 12px 15px;
+}
+
+.imgPopulaire div h2::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f201";
+    color: var(--main-color);
+    position: absolute;
+    right: 0;
+}
+
+.imgPopulaire article p {
+    padding-top: 7px;
+}
+
+/*Structure Activité*/
+.imgActivite h2 {
+    padding-bottom: 20px;
+}
+
+.imgActivite {
+    margin: 60px 0;
+}
+
+/*.imgActivite article {
+    height: 445px;
+}*/
+
+.articleActivity {
+    display: flex;
+    justify-content: space-between;
+}
+
+.articleActivity article img {
+    border-radius: 20px 20px 0 0;
+}
+
+.articleActivity .legende {
+    border-radius: 0 0 20px 20px;
+    box-shadow: 2px 2px 20px 0 lightgrey;
+    padding: 20px 19px;
+}
+
+/*--------------------------------------------IDENTIFIANT-----------------------------------------*/
+
+/*---HEADER---*/
+/*Structure Logo et du nav*/
+#logoNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Position des barres bleu*/
+#logoNav nav ul {
+    display: flex;
+    width: 300px;
+}
+
+#logoNav img {
+    /*je ne vois pas comment réduire la dimension du logo autrement*/
+    max-width: 61px;
+    max-height: 19px;
+}
+
+/*Partie Formulaire*/
+
+#form-search-city button {
+    display: none;
+}
+
+#form-search-city {
+    display: flex;
+    margin: 20px 0;
+}
+
+#form-search-city input[type="search"] {
+    height: 49px;
+    width: 282px;
+    border: 1px solid var(--color-grey-background);
+    text-align: center;
+}
+
+#form-search-city input[type="submit"] {
+    height: 49px;
+    width: 132px;
+    border: 1px solid var(--color-grey-background);
+    background: var(--main-color);
+    border-radius: 0 15px 15px 0;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*Partie icône MAP*/
+#form-search-city::before {
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    content: "\f3c5";
+    background: var(--color-grey-background);
+    border-radius: 15px 0 0 15px;
+    padding: 16px;
+}
+
+/*Position filtre*/
+#ulFiltre {
+    display: flex;
+}
+
+/*---MAIN---*/
+
+/*paragraphe afficher plus*/
+#displayMore a {
+    padding-left: 44px;
+}
+
+/*Position des 2 premières sections*/
+#structureSection {
+    display: flex;
+}
+
+#structureSection article {
+    box-shadow: 2px 2px 20px 0 lightgrey;
+}
+
+/*Section hébergements*/
+
+#articleFlex figure {
+    width: 246px;
+    height: 124px;
+}

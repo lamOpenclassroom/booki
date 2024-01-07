@@ -1,0 +1,105 @@
+@media screen and (max-width: 1024px) {
+
+    /*Paramètre global*/
+
+    /*---------------------------------------HTML-------------------------------------------------*/
+    html {
+        font-size: 14px;
+    }
+    
+    /*----------------------------------------CLASSES---------------------------------------------*/
+
+    .contener {
+        width: 100%;
+    }
+                        /*---HEADER---*/
+
+    /*Filtres*/
+    .paragraphFiltre li {
+        margin-left: 10px;
+     }
+
+                        /*---MAIN---*/
+
+    /*Section Hébergement à Marseille*/
+    .imgHeberg {
+        padding-bottom: 46px;
+        margin-right: auto;
+    }
+
+    .imgHeberg article {
+        width: 30%;
+    }
+
+    /*Section les plus populaires*/
+    .imgPopulaire {
+        margin-top: 53px;
+    }
+
+    .imgPopulaire figure {
+        width: 39%;
+        height: auto;
+    }
+ 
+    /*Section Activités*/
+
+    .imgActivite article {
+        height: 267px;
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    .imgActiviteLarge figure {
+        height: 211px;
+        width: 100%;
+    }
+
+    .articleActivity .legende {
+        border-radius: 0 0 20px 20px;
+        box-shadow: 2px 2px 20px 0 lightgrey;
+        padding-top: 10px;
+        width: 100%;
+        height: 56px;
+        text-align: center;
+    }
+    
+
+    /*-----------------------------------------IDENTIFIANT----------------------------------------*/
+
+                        /*---MAIN---*/
+
+    /*Section Hébergements et populaires*/
+    #structureSection {
+        flex-direction: column;
+    }
+
+    /*Section Hébergements*/
+    #articleFlex figure {
+        width: 100%;
+    }
+
+    /*Section populaires*/
+    #PositionArticleTablette .titlePara {
+        padding: 12px 4px 12px 10px;
+        width: 61%;
+        height: auto;
+    }
+
+    #PositionArticleTablette {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #PositionArticleTablette article {
+        margin-left: 23px;
+    }
+
+    #PositionArticleTablette #articlePremPop{
+        margin-left: 0;
+    }
+
+    #articlePremAct{
+        margin-left: 0;
+    }
+    
+}

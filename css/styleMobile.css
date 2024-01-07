@@ -1,0 +1,220 @@
+@media screen and (max-width: 768px) {
+    /*-------------------------------------------HTML-----------------------------------------*/
+
+
+    /*-----FOOTER-----*/
+
+    footer {
+        flex-direction: column;
+        padding-left: 30px;
+    }
+
+    /*-----------------------------------------CLASSES---------------------------------------*/
+
+    /*Paramètre global*/
+    .contener {
+        width: 100%;
+        padding: 0;
+    }
+
+    /*----HEADER----*/
+
+    /*Partie navigation*/
+
+    .liHeberg,
+    .liActivite {
+        padding-bottom: 23px;
+        padding-top: 40px;
+    }
+
+    .liHeberg:hover,
+    .liActivite:hover {
+        border-top: 0;
+    }
+
+    /*Titre et paragraphe*/
+    .h1Paragraph {
+        margin-top: 31px;
+        padding: 0 20px;
+    }
+
+    /*Emplacement filtres*/ 
+    .paragraphFiltre {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 20px;
+    }
+
+    .paragraphFiltre li {
+        margin: 8px 0;
+        height: 50px;
+        width: 45%;
+        font-size: 0.94rem;
+    }
+
+    /*---MAIN---*/
+
+    /*Partie information*/
+    .info {
+        margin: 43px 0 17px 0;
+        padding: 0 20px;
+    }
+
+    .info p {
+        display: flex;
+        align-items: baseline;
+    }
+
+    /*Section les plus populaires*/
+
+    .imgPopulaire {
+        border-radius: 0;
+        padding: 28px 20px 47px;
+        margin-top: auto;
+    }
+
+    /*Section Hébergements*/
+    .imgHeberg {
+        background: #FFF;
+        padding: 0 20px;
+    }
+
+    .imgHeberg article {
+        width: 100%;
+    }
+
+    .imgHeberg h2 {
+        padding: 26px 0 19px;
+    }
+
+    /*-----Section Activités-----*/
+    .imgActivite {
+        padding: 0 21px;
+    }
+
+    .articleActivity {
+        flex-direction: column;
+    }
+
+    .imgActivite h2 {
+        padding-bottom: 0;
+    }
+
+    .imgActivite article {
+        margin: 12px 0;
+    }
+
+    .imgActiviteLarge figure {
+        width: 100%;
+    }
+
+    .imgActiviteLarge .paddingDif {
+        padding: 9px 30px;
+        padding: 20px 20px;
+    }
+
+    .articleActivity .legende {
+        text-align: left;
+    }
+
+    /*--------------------------------------IDENTIFIANT-------------------------------------------*/
+
+    /*----HEADER----*/
+
+    /*Position Logo et navigation*/
+    #logoNav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logoNav nav ul {
+        width: 100vw;
+    }
+
+    #logoNav ul li:hover {
+        padding-bottom: 21px;
+        border-bottom: 2px var(--main-color) solid;
+    }
+
+    /*Formulaire*/
+    #form-search-city {
+        padding: 0 20px;
+    }
+
+    /*Remplacer le bouton*/
+    #form-search-city button {
+        display: flex;
+        padding: 16px;
+        border: 1px solid var(--color-grey-background);
+        background: var(--main-color);
+        border-radius: 0 15px 15px 0;
+        color: white;
+        cursor: pointer;
+    }
+
+    #form-search-city input[type="search"] {
+        width: 100%;
+    }
+
+    #form-search-city input[type="submit"] {
+        display: none;
+    }
+
+    /*Partie filtres*/
+    #ulFiltre {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    /*-----MAIN-----*/
+
+    /*Position reverse "les plus populaires / Hébergements à Marseille*/
+    #structureSection {
+        flex-direction: column-reverse;
+    }
+
+    /*Section les plus populaires*/
+    #PositionArticleTablette {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    #PositionArticleTablette article {
+        width: 100%;
+        margin: 11px 0;
+    }
+
+    /*Section Hébergements*/
+    #articleFlex {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #displayMore {
+        display: none;
+    }
+
+    /*Section Activités*/
+    #articlePremAct {
+        margin-top: 0;
+    }
+
+    #positionTitre3 h3 {
+        padding: 20px 27px 7px 19px;
+    }
+
+    #positionTitre4 h3 {
+        max-width: 247px;
+        margin: 20px 36px 11px 19px;
+    }
+
+    /*Changement taille de texte dans le filtre 360px*/
+
+    @media screen and (max-width: 360px) {
+        .paragraphFiltre li {
+            font-size: 0.70rem;
+        }
+    }    
+}
